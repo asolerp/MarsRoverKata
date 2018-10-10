@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mars Rover</title>
+  <script src="javascripts/tabla.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div>
+  <h1 class="title">MARS ROVERS</h1>
+</div>
+
+<div class="container">
+    <div class="col col-20" >
+        <h1 class="title1">Menu</h1>
+        <div>
+          <button class="buttonMenu" onclick="rockGenerator()">Generate Rocks</button>
+          <button class="buttonMenu" onclick="reload()">Restart</button>
+        </div>
+      </div>
+      <div class="col col-60">
+        <aside class="col col-70">
+            <input type="text" id="instructions" class="instructions">
+        </aside>
+        <aside>
+        <aside class="col col-30">
+          <button class="buttonInstructions" onclick="doInstructions();doInstructionsTerminal()">Run!</button>
+        </aside>
+          <canvas id="myCanvas"  width="1370" height="650"></canvas>
+          <div>
+            <h1 style="color: white; text-align:center;">Instructions</h1>
+            <ul style="color: white; text-decoration: none;">
+              <li style="text-decoration: none;"> 1 - Choose between "f - forward" // "b - backward" // "l - left" // "r - right".</li>
+              <li style="text-decoration: none;"> 2 - Press button Generate Rocks to insert rocks into the grid. </li>
+            </ul>
+          </div>
+    </div>
+    <div class="col col-20" >
+      <h1 class="title1">TravelLog</h1>
+      <div id="travel"></div>
+    </div>
+</div>
+
+
+<script src="javascripts/app.js"></script>
+<script src="javascripts/rover.js"></script>
+  
+</body>
+
+</html>
